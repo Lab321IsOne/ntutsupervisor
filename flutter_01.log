@@ -1,0 +1,95 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter --no-color packages get
+
+## exception
+
+ArgumentError: Invalid argument(s): Could not resolve C:\Flutter\flutter\bin\cache\dart-sdk\bin\pub.bat to executablePath in C:\Users\Rex\Desktop\11\supervisor-main
+
+```
+#0      LocalProcessManager._getExecutable (package:flutter_tools/src/base/process.dart:888:7)
+#1      LocalProcessManager.start (package:flutter_tools/src/base/process.dart:863:30)
+#2      ErrorHandlingProcessManager.start.<anonymous closure> (package:flutter_tools/src/base/error_handling_io.dart:745:24)
+#3      _run (package:flutter_tools/src/base/error_handling_io.dart:537:20)
+#4      ErrorHandlingProcessManager.start (package:flutter_tools/src/base/error_handling_io.dart:735:12)
+#5      _DefaultProcessUtils.start (package:flutter_tools/src/base/process.dart:476:28)
+#6      _DefaultProcessUtils.stream (package:flutter_tools/src/base/process.dart:495:35)
+#7      _DefaultPub.batch (package:flutter_tools/src/dart/pub.dart:283:34)
+<asynchronous suspension>
+#8      _DefaultPub.get (package:flutter_tools/src/dart/pub.dart:223:7)
+<asynchronous suspension>
+#9      PackagesGetCommand._runPubGet (package:flutter_tools/src/commands/packages.dart:132:7)
+<asynchronous suspension>
+#10     PackagesGetCommand.runCommand (package:flutter_tools/src/commands/packages.dart:165:5)
+<asynchronous suspension>
+#11     FlutterCommand.verifyThenRunCommand (package:flutter_tools/src/runner/flutter_command.dart:1174:12)
+<asynchronous suspension>
+#12     FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:1026:27)
+<asynchronous suspension>
+#13     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:152:19)
+<asynchronous suspension>
+#14     AppContext.run (package:flutter_tools/src/base/context.dart:151:12)
+<asynchronous suspension>
+#15     CommandRunner.runCommand (package:args/command_runner.dart:197:13)
+<asynchronous suspension>
+#16     FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:280:9)
+<asynchronous suspension>
+#17     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:152:19)
+<asynchronous suspension>
+#18     AppContext.run (package:flutter_tools/src/base/context.dart:151:12)
+<asynchronous suspension>
+#19     FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:236:5)
+<asynchronous suspension>
+#20     run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:66:9)
+<asynchronous suspension>
+#21     run.<anonymous closure> (package:flutter_tools/runner.dart:64:12)
+<asynchronous suspension>
+#22     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:152:19)
+<asynchronous suspension>
+#23     AppContext.run (package:flutter_tools/src/base/context.dart:151:12)
+<asynchronous suspension>
+#24     runInContext (package:flutter_tools/src/context_runner.dart:73:10)
+<asynchronous suspension>
+#25     main (package:flutter_tools/executable.dart:92:3)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel master, 1.26.0-18.0.pre.212, on Microsoft Windows [Version 10.0.17763.1697], locale zh-TW)
+    • Flutter version 1.26.0-18.0.pre.212 at C:\Flutter\flutter
+    • Framework revision 02d441ea55 (73 minutes ago), 2021-04-01 04:29:03 -0400
+    • Engine revision 75997c53b8
+    • Dart version 2.13.0 (build 2.13.0-0.0.dev)
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 30.0.3)
+    • Android SDK at C:\Users\Rex\AppData\Local\Android\sdk
+    • Platform android-30, build-tools 30.0.3
+    • Java binary at: C:\Program Files\Android\Android Studio\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1248-b01)
+    • All Android licenses accepted.
+
+[✓] Chrome - develop for the web
+    • Chrome at C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+
+[✓] Android Studio (version 3.3)
+    • Android Studio at C:\Program Files\Android\Android Studio
+    • Flutter plugin version 34.0.1
+    • Dart plugin version 182.5215
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1248-b01)
+
+[✓] VS Code (version 1.54.3)
+    • VS Code at C:\Users\Rex\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension can be installed from:
+      🔨 https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter
+
+[✓] Connected device (2 available)
+    • Chrome (web) • chrome • web-javascript • Google Chrome 89.0.4389.90
+    • Edge (web)   • edge   • web-javascript • Microsoft Edge 88.0.705.81
+
+• No issues found!
+```

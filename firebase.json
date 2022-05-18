@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "site": "ntutlab321-k1100507",
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+
+  }
+}
